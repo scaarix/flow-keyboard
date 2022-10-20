@@ -2,10 +2,10 @@
 A open source split mechanical keyboard
 
 ## TODO
-- [✓] Finish layout (ergogen)
-- [✓] Make keyboard outline (ergogen) 
-- [x] Fix microcontroller orientation (ergogen)
-- [x/✓] Create pcb (ergogen)
-- [x] Make screw holes in pcb
-- [x] Add stabilizers in pcb
-- [x] Create case  
+- [x] Finish layout (ergogen)
+- [x] Make keyboard outline (ergogen) 
+- [ ] Fix microcontroller orientation (ergogen)
+- [ ] Create pcb (ergogen)
+- [ ] Make screw holes in pcb
+- [ ] Add stabilizers in pcb
+- [ ] Create case  

@@ -1,0 +1,179 @@
+points:
+  key:
+    footprints:
+      mx_hotswap:
+        type: mx
+        nets:
+          from: =column_net
+          to: GND
+        params:
+          keycaps: true
+          reverse: false
+          hotswap: true
+  zones:
+    matrix:
+      rotate: 
+      rows:
+
+        bottom:
+        home:
+        top:
+        num:
+      columns:
+        tab:
+          key:
+            column_net: P9
+        pinkie:
+          rotate:
+          stagger: 3
+          key:
+            column_net: P8
+
+        ring:
+
+          stagger: 4
+          key:
+            column_net: P7
+
+        middle:
+          stagger: 2
+          key:
+            column_net: P6
+
+        index:
+          stagger: -4
+          key:
+            column_net: P5
+
+        far:
+          stagger: -3
+          key:
+            column_net: P4
+
+
+      
+    thumbfan:
+      key:
+        tags:
+          1u: true
+      rotate: 
+      anchor:
+        shift: [66, -35]
+      rows:
+        bottom:
+        top:
+          shift: [0, 0]
+      columns: 
+        1:
+          key: 
+            column_net: P19
+          rotate: -20
+          row_overrides:
+            bottom:
+              shift: [17, 15]
+            top:
+              
+              shift: [37,-4]
+        2:
+          key: 
+            column_net: P20
+          row_overrides:
+
+            top:
+
+              rotate: -16
+              shift: [33,-13]
+
+          rotate: 15
+          spread: 20
+outlines:
+  exports:
+    raw:
+      - type: keys
+        side: left
+        size: [U, U]
+      - type: rectangle
+        size: [104.5,10]
+        anchor:
+          shift: [0,-9.5]
+      - type: rectangle
+        size: [54.5,25.2]
+        anchor:
+          rotate: 90
+          shift: [129.5,-70.6]
+      - type: rectangle
+        
+        size: [34,22]
+        anchor:
+          ref: matrix_pinkie_bottom
+          shift: [71,-11]
+          rotate: -45
+      - type: rectangle
+        
+        size: [34,22]
+        anchor:
+          ref: matrix_pinkie_bottom
+          shift: [69,-9]
+          rotate: -45
+      - type: rectangle
+        size: [27,70]
+        anchor:
+          ref: matrix_far_bottom
+          shift: [5, -10]
+      - type: polygon
+        points:
+          - ref:  matrix_far_bottom
+            shift: [20,-30]
+          - ref:  thumbfan_1_bottom
+            shift: [30,0]
+          - ref:  thumbfan_1_top
+            shift: [10,0]
+          - ref:  thumbfan_2_top
+            shift: [10,-10]
+          - ref:  matrix_pinkie_bottom
+            shift: [20,-10]
+          - ref:  matrix_ring_bottom
+            
+          - ref:  matrix_far_bottom
+            shift: [9.3,-9] 
+          - ref: thumbfan_1_top
+    circle1:
+      - type: circle
+        radius: 25  
+        anchor:
+          ref: matrix_far_bottom
+          shift: [5.5,-25]       
+    thumbfan_glue:
+      - type: polygon
+        points:
+          - ref:  matrix_far_bottom
+          - ref:  thumbfan_1_bottom
+          - ref:  thumbfan_1_top
+          - ref:  thumbfan_2_top
+          - ref:  matrix_tab_bottom
+          - ref:  matrix_pinkie_home
+          - ref:  matrix_far_home
+            shift: [30,0]
+    cutout:
+      - type: outline
+        name: raw
+        fillet: 3
+    keycap_outlines:
+      - type: keys
+        side: left
+        size: [U -0.8, U -0.8]
+    preview:
+      [cutout,keycap_outlines]
+pcbs:
+  scaarix_flow:
+    outlines:
+      main:
+        outline: preview
+    footprints:
+      promicro:
+        type: promicro
+        anchor:
+          ref: matrix_far_top
+          shift: [20, 0]
+          rotate: 90
+          

@@ -6,6 +6,7 @@ A open source split mechanical keyboard powered by ergogen and kicad
 
 # Features (So far)
 - Hotswappable with mx-style switches
+- Flippable PCB
 ## TODO
 - [x] Finish layout (ergogen)
 - [x] Make keyboard outline (ergogen) 

@@ -5,7 +5,7 @@ points:
         type: mx
         nets:
           from: =column_net
-          to: GND
+          to: =colrow
         params:
           keycaps: true
           reverse: false
@@ -17,16 +17,19 @@ points:
           shift: [0, -7.5]
         nets:
           from: =colrow
-          to: =column_net
+          to: =row_net
   zones:
     matrix:
       rotate: 
       rows:
-
         bottom:
+          row_net: P16
         home:
+          row_net: P10
         top:
+          row_net: P6
         num:
+          row_net: P5
       columns:
         tab:
           key:
@@ -51,12 +54,12 @@ points:
         index:
           stagger: -4
           key:
-            column_net: P17
+            column_net: P15
 
         far:
           stagger: -3
           key:
-            column_net: P16
+            column_net: P14
 
 
       
@@ -69,8 +72,10 @@ points:
         shift: [66, -35]
       rows:
         bottom:
+          row_net: P4
         top:
           shift: [0, 0]
+          row_net: P3
       columns: 
         1:
           key: 

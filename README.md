@@ -1,6 +1,5 @@
 # Flow
-A open source split mechanical keyboard
-
+A open source split mechanical keyboard powered by ergogen
 ![Main layout](flow.png)
 ## TODO
 - [x] Finish layout (ergogen)

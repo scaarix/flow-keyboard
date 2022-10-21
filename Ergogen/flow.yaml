@@ -10,6 +10,13 @@ points:
           keycaps: true
           reverse: false
           hotswap: true
+      diode:
+        type: diode
+        anchor:
+          rotate: 90
+        nets:
+          from: =colrow
+          to: =column_net
   zones:
     matrix:
       rotate: 
@@ -22,33 +29,33 @@ points:
       columns:
         tab:
           key:
-            column_net: P9
+            column_net: P21
         pinkie:
           rotate:
           stagger: 3
           key:
-            column_net: P8
+            column_net: P20
 
         ring:
 
           stagger: 4
           key:
-            column_net: P7
+            column_net: P19
 
         middle:
           stagger: 2
           key:
-            column_net: P6
+            column_net: P18
 
         index:
           stagger: -4
           key:
-            column_net: P5
+            column_net: P17
 
         far:
           stagger: -3
           key:
-            column_net: P4
+            column_net: P16
 
 
       
@@ -66,7 +73,7 @@ points:
       columns: 
         1:
           key: 
-            column_net: P19
+            column_net: P8
           rotate: -20
           row_overrides:
             bottom:
@@ -76,7 +83,7 @@ points:
               shift: [37,-4]
         2:
           key: 
-            column_net: P20
+            column_net: P9
           row_overrides:
 
             top:
@@ -116,10 +123,16 @@ outlines:
           shift: [69,-9]
           rotate: -45
       - type: rectangle
-        size: [27,70]
+        size: [27,52.5]
         anchor:
           ref: matrix_far_bottom
-          shift: [5, -10]
+          shift: [5, 11]
+      - type: rectangle
+        size: [21,52.5]
+        anchor:
+          ref: matrix_far_bottom
+          shift: [-18, -21]
+          rotate: -30
       - type: polygon
         points:
           - ref:  matrix_far_bottom
@@ -175,5 +188,18 @@ pcbs:
         anchor:
           ref: matrix_far_top
           shift: [20, 0]
-          rotate: 90
-          
+          rotate: -90
+      trrs:
+        type: trrs
+        nets:
+          A: GND
+          B: GND
+          C: P7
+          D: VCC
+        anchor:
+          ref: matrix_far_home
+          shift: [24.5, -3]
+          rotate: -90
+        params:
+          reverse: true
+          symmetric: true

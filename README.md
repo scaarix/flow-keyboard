@@ -10,4 +10,4 @@ A open source split mechanical keyboard
 - [ ] Make screw holes in pcb
 - [ ] Add stabilizers in pcb
 - [ ] Create case  
-- [ ] Add trrs jack
+- [x] Add trrs jack

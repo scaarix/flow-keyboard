@@ -11,7 +11,7 @@ A open source split mechanical keyboard powered by [Ergogen](https://github.com/
 - [x] Finish layout (ergogen)
 - [x] Make keyboard outline (ergogen) 
 - [x] Fix microcontroller orientation (ergogen)
-- [ ] Create pcb (ergogen)
+- [x] Create pcb (ergogen)
 - [ ] Make screw holes in pcb
 - [ ] Add stabilizers in pcb
 - [ ] Create case  

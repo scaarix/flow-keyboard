@@ -13,7 +13,8 @@ points:
       diode:
         type: diode
         anchor:
-          rotate: 90
+          rotate: 0
+          shift: [0, -7.5]
         nets:
           from: =colrow
           to: =column_net
@@ -116,6 +117,11 @@ outlines:
           shift: [71,-11]
           rotate: -45
       - type: rectangle
+        anchor:
+          ref: matrix_middle_bottom
+          shift: [-75,-25]
+        size: [80,83]
+      - type: rectangle
         
         size: [34,22]
         anchor:
@@ -146,10 +152,17 @@ outlines:
           - ref:  matrix_pinkie_bottom
             shift: [20,-10]
           - ref:  matrix_ring_bottom
-            
+
           - ref:  matrix_far_bottom
             shift: [9.3,-9] 
           - ref: thumbfan_1_top
+      - type: rectangle
+        size: [15,55]
+        anchor:
+          ref: thumbfan_1_bottom
+          shift: [-15, -2.5]
+          rotate: -110
+          
     circle1:
       - type: circle
         radius: 25  

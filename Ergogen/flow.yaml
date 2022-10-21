@@ -49,7 +49,7 @@ points:
 
         index:
           stagger: -4
-          key
+          key:
             column_net: P17
 
         far:

@@ -3,6 +3,9 @@ A open source split mechanical keyboard powered by ergogen and kicad
 
 
 ![Main layout](flow.png)
+
+# Features
+- Hotswappable with mx-style switches
 ## TODO
 - [x] Finish layout (ergogen)
 - [x] Make keyboard outline (ergogen) 

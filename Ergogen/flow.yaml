@@ -189,6 +189,7 @@ outlines:
       - type: outline
         name: raw
         fillet: 3
+
     keycap_outlines:
       - type: keys
         side: left

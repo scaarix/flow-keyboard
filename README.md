@@ -1,6 +1,7 @@
 # Flow
 A open source split mechanical keyboard
 
+![Main layout](flow.png)
 ## TODO
 - [x] Finish layout (ergogen)
 - [x] Make keyboard outline (ergogen) 

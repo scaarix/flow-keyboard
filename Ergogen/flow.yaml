@@ -1,5 +1,5 @@
 units:
-   U: 19.05 # mx style switches size
+   U: 19.05
 points:
   key:
     footprints:
@@ -219,7 +219,7 @@ outlines:
     cutout:
       - type: outline
         name: raw
-        fillet: 3
+        fillet: 1.99
 
     keycap_outlines:
       - type: keys

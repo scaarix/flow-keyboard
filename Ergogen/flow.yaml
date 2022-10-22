@@ -1,3 +1,5 @@
+units:
+   U: 19.05
 points:
   key:
     footprints:
@@ -167,13 +169,42 @@ outlines:
           ref: thumbfan_1_bottom
           shift: [-15, -2.5]
           rotate: -110
-          
-    circle1:
-      - type: circle
-        radius: 25  
+      - type: rectangle #tab expansion
+        
+        size: [19.7,19.05]
         anchor:
-          ref: matrix_far_bottom
-          shift: [5.5,-25]       
+          ref: matrix_tab_num
+          shift: [-10.2,-7]
+      - type: rectangle #Pinkie expansion
+        
+        size: [19.7,19.05]
+        anchor:
+          ref: matrix_pinkie_num
+          shift: [-10.2,-7]
+      - type: rectangle #Ring expansion
+        
+        size: [19.7,19.05]
+        anchor:
+          ref: matrix_ring_num
+          shift: [-10.2,-7]
+      - type: rectangle #Middle expansion
+        
+        size: [19.7,19.05]
+        anchor:
+          ref: matrix_middle_num
+          shift: [-9.8,-7]
+      - type: rectangle #Index expansion
+        
+        size: [19.7,19.05]
+        anchor:
+          ref: matrix_index_num
+          shift: [-9.6,-7]
+      - type: rectangle #Far expansion
+        
+        size: [19.7,19.05]
+        anchor:
+          ref: matrix_far_num
+          shift: [-9.6,-7]
     thumbfan_glue:
       - type: polygon
         points:

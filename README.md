@@ -17,7 +17,7 @@ A open source split mechanical keyboard powered by [Ergogen](https://github.com/
 - [ ] Create case  
 - [x] Add trrs jack
 
-#Goals
+# Goals
 - Have hotswap with choc, kailh box
 - Be wireless
 - RGB (More of an end goal)

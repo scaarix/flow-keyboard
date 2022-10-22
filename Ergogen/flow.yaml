@@ -244,7 +244,7 @@ pcbs:
         nets:
           A: GND
           B: GND
-          C: P7
+          C: P2
           D: VCC
         anchor:
           ref: matrix_far_home

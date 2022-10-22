@@ -10,7 +10,7 @@ points:
           to: =colrow
         params:
           keycaps: true
-          reverse: false
+          reverse: true
           hotswap: true
       diode:
         type: diode

@@ -1,5 +1,5 @@
 units:
-   U: 19.05
+   U: 19.05 # mx style switches size
 points:
   key:
     footprints:

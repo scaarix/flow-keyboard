@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "Switch_Keyboard_Cherry_MX")(type "KiCad")(uri "D:/keyswitch-kicad-library-main/library/footprints/Switch_Keyboard_Cherry_MX.pretty")(options "")(descr ""))
+  (lib (name "Mounting_Keyboard_Stabilizer")(type "KiCad")(uri "D:/keyswitch-kicad-library-main/library/footprints/Mounting_Keyboard_Stabilizer.pretty")(options "")(descr ""))
+)

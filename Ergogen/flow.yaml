@@ -16,7 +16,7 @@ points:
         type: diode
         anchor:
           rotate: 0
-          shift: [0, -7.5]
+          shift: [0, -8.2]
         nets:
           from: =colrow
           to: =row_net

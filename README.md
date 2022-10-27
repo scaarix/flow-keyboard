@@ -7,6 +7,9 @@ A open source split mechanical keyboard powered by [Ergogen](https://github.com/
 # Features (So far)
 - Hotswappable with mx-style switches
 - Flippable PCB
+# Updates
+- Had to restart for diode placement
+- Adding RGB and Wireless
 ## TODO
 - [x] Finish layout (ergogen)
 - [x] Make keyboard outline (ergogen) 
@@ -16,7 +19,8 @@ A open source split mechanical keyboard powered by [Ergogen](https://github.com/
 - [ ] Make screw holes in pcb
 - [ ] Add stabilizers in pcb
 - [ ] Create case  
-- [x] Add trrs jack
+- [ ] Add RGB
+- [ ] Wireless
 
 # Goals
 - Have hotswap with choc, kailh box

@@ -237,7 +237,7 @@ pcbs:
         type: promicro
         anchor:
           ref: matrix_far_top
-          shift: [20, 0]
+          shift: [20, 8]
           rotate: -90
       trrs:
         type: trrs
@@ -248,7 +248,7 @@ pcbs:
           D: VCC
         anchor:
           ref: matrix_far_home
-          shift: [24.5, -3]
+          shift: [24.5, 3]
           rotate: -90
         params:
           reverse: true

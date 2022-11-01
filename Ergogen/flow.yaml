@@ -248,7 +248,7 @@ pcbs:
           D: VCC
         anchor:
           ref: matrix_far_home
-          shift: [24.5, 3]
+          shift: [32, 3]
           rotate: -90
         params:
           reverse: true

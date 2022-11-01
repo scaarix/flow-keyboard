@@ -7,6 +7,8 @@ A open source split mechanical keyboard powered by [Ergogen](https://github.com/
 # Features (So far)
 - Hotswappable with mx-style switches
 - Flippable PCB
+- Stabilizers
+- Thumb Cluster with 3 keys (on each hand)
 # Updates
 - Had to restart for diode placement
 - Adding RGB and Wireless

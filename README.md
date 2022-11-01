@@ -9,6 +9,7 @@ A open source split mechanical keyboard powered by [Ergogen](https://github.com/
 - Flippable PCB
 - Stabilizers
 - Thumb Cluster with 3 keys (on each hand)
+- Gasket mounted
 # Updates
 - Had to restart for diode placement
 - Adding RGB and Wireless

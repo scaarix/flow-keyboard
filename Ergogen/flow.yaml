@@ -71,7 +71,7 @@ points:
           1u: true
       rotate: 
       anchor:
-        shift: [66, -35]
+        shift: [69, -43]
       rows:
         bottom:
           row_net: P4
@@ -97,7 +97,7 @@ points:
             top:
 
               rotate: -16
-              shift: [33,-13]
+              shift: [35,-15]
 
           rotate: 15
           spread: 20
@@ -116,9 +116,9 @@ outlines:
         anchor:
           rotate: 90
           shift: [129.5,-70.6]
-      - type: rectangle
+      - type: rectangle # thumbfan and mcu filler
         
-        size: [34,22]
+        size: [41.75,22.5]
         anchor:
           ref: matrix_pinkie_bottom
           shift: [71,-11]
@@ -135,13 +135,13 @@ outlines:
           ref: matrix_pinkie_bottom
           shift: [69,-9]
           rotate: -45
-      - type: rectangle
+      - type: rectangle # mcu spot
         size: [27,52.5]
         anchor:
           ref: matrix_far_bottom
           shift: [5, 11]
-      - type: rectangle
-        size: [21,52.5]
+      - type: rectangle # mcu and far bottom filler
+        size: [21.3,52.5]
         anchor:
           ref: matrix_far_bottom
           shift: [-18, -21]
@@ -205,6 +205,11 @@ outlines:
         anchor:
           ref: matrix_far_num
           shift: [-9.6,-7]
+      - type: rectangle
+        size: [27.6,60.4]
+        anchor:
+          ref: matrix_far_bottom
+          shift: [12.8,-84]
     thumbfan_glue:
       - type: polygon
         points:

@@ -85,7 +85,7 @@ points:
           rotate: -20
           row_overrides:
             bottom:
-              shift: [17, 15]
+              shift: [14, 15]
             top:
               
               shift: [37,-4]
@@ -97,10 +97,11 @@ points:
             top:
 
               rotate: -16
-              shift: [35,-15]
+              shift: [35.8,-15]
 
           rotate: 15
           spread: 20
+#PCB SHAPE
 outlines:
   exports:
     raw:
@@ -164,7 +165,7 @@ outlines:
             shift: [9.3,-9] 
           - ref: thumbfan_1_top
       - type: rectangle
-        size: [15,55]
+        size: [16.2,60]
         anchor:
           ref: thumbfan_1_bottom
           shift: [-15, -2.5]

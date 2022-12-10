@@ -10,8 +10,9 @@ An open source split mechanical keyboard powered by [Ergogen](https://github.com
 - Stabilizers
 - Thumb Cluster with 3 keys (on each hand)
 # Updates
-- Had to restart for diode placement
-- Adding RGB and Wireless
+- PCB is finally finished 
+- Adding RGB and Wireless will be made in a later revision
+- Currently starting to work on the case
 ## TODO
 - [x] Finish layout (ergogen)
 - [x] Make keyboard outline (ergogen) 

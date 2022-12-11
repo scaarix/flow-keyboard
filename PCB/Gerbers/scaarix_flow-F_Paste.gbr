@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,(6.0.8)*%
-%TF.CreationDate,2022-12-10T14:26:34-07:00*%
+%TF.CreationDate,2022-12-10T17:49:20-07:00*%
 %TF.ProjectId,scaarix_flow,73636161-7269-4785-9f66-6c6f772e6b69,v1.0.0*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Paste,Top*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (6.0.8)) date 2022-12-10 14:26:34*
+G04 Created by KiCad (PCBNEW (6.0.8)) date 2022-12-10 17:49:20*
 %MOMM*%
 %LPD*%
 G01*
@@ -90,12 +90,12 @@ X181728500Y-73611500D03*
 X185028500Y-73611500D03*
 %TD*%
 %TO.C,D25*%
-X243815570Y-140311500D03*
 X240515570Y-140311500D03*
+X243815570Y-140311500D03*
 %TD*%
 %TO.C,D26*%
-X265428500Y-148177964D03*
 X262128500Y-148177964D03*
+X265428500Y-148177964D03*
 %TD*%
 %TO.C,D15*%
 X200728500Y-90611500D03*

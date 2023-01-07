@@ -11,8 +11,8 @@ An open source split mechanical keyboard powered by [Ergogen](https://github.com
 - Thumb Cluster with 3 keys (on each hand)
 # Updates
 - PCB is finally finished 
-- Adding RGB and Wireless will be made in a later revision
-- Currently starting to work on the case
+- RGB is starting to get worked on
+- Busy changing everything to v4 of ergogen
 ## TODO
 - [x] Finish layout (ergogen)
 - [x] Make keyboard outline (ergogen) 

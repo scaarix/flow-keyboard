@@ -1,0 +1,133 @@
+units:
+   U: 19.05
+points:
+  key:
+    footprints:
+      mx_hotswap:
+        type: mx
+        nets:
+          from: =column_net
+          to: =colrow
+        params:
+          keycaps: true
+          reverse: true
+          hotswap: true
+      diode:
+        type: diode
+        anchor:
+          rotate: 0
+          shift: [0, -8.2]
+        nets:
+          from: =colrow
+          to: =row_net
+  zones:
+    matrix:
+      rotate: 
+      rows:
+        bottom:
+          row_net: P16
+        home:
+          row_net: P10
+        top:
+          row_net: P6
+        num:
+          row_net: P5
+      columns:
+        tab:
+          key:
+            column_net: P21
+            stagger: 3
+        pinkie:
+          
+          key:
+            column_net: P20
+            stagger: 3
+
+        ring:          
+          key:
+            stagger: 6
+            column_net: P19
+
+        middle:
+          
+          key:
+            stagger: 2
+            column_net: P18
+
+        index:
+          
+          key:
+            stagger: -8
+            column_net: P15
+
+        far:
+          
+          key:
+            stagger: -3
+            column_net: P14
+
+
+      
+    thumbfan:
+      key:
+        tags:
+          1u: true
+      anchor:
+        shift: [69, -43]
+      rows:
+        bottom:
+          row_net: P4
+        top:
+          shift: [0, 0]
+          row_net: P3
+      columns: 
+        1:
+          key:
+            rotate: -20
+            column_net: P8
+            1u : false
+            15u : true 
+            bottom:
+              shift: [14, 15]
+            top:
+              
+              shift: [37,-4]
+          
+            
+        2:
+          key: 
+            column_net: P9
+            rotate: 15
+            spread: 20
+            top:
+              shift: [35.8,-15]
+outlines:
+  exports:
+    keycap_outlines:
+      what: keys
+      size: [19.05, 19.05]
+      bound: false
+      tags: [1u]
+    keycap_outlines1:
+      what: keys
+      size: [19.05, 38.1]
+      bound: false
+      tags: [2u]
+pcbs:
+  scaarix_flow:
+    outlines:
+      main:
+        outeline: preview
+    footprints:
+      promicro:
+        type: promicro
+      trrs:
+        type: trrs
+        nets:
+          A: GND
+          B: GND
+          C: P2
+          D: VCC
+        params:
+          reverse: true
+          symmetric: true

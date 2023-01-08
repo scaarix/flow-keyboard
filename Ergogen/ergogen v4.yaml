@@ -1,5 +1,6 @@
 units:
    U: 19.05
+   2: 38.1
 points:
   key:
     footprints:
@@ -80,13 +81,12 @@ points:
         top:
           shift: [0, 0]
           row_net: P3
+        
       columns: 
         1:
           key:
-            rotate: -20
-            column_net: P8
-            1u : false
-            15u : true 
+            splay: -22
+            column_net: P8 
             bottom:
               shift: [14, 15]
             top:
@@ -97,37 +97,33 @@ points:
         2:
           key: 
             column_net: P9
-            rotate: 15
+            splay: 9
             spread: 20
+            shift: [5,1]
             top:
               shift: [35.8,-15]
 outlines:
   exports:
-    keycap_outlines:
-      what: keys
-      size: [19.05, 19.05]
-      bound: false
-      tags: [1u]
-    keycap_outlines1:
-      what: keys
-      size: [19.05, 38.1]
-      bound: false
-      tags: [2u]
-pcbs:
-  scaarix_flow:
-    outlines:
-      main:
-        outeline: preview
-    footprints:
-      promicro:
-        type: promicro
-      trrs:
-        type: trrs
-        nets:
-          A: GND
-          B: GND
-          C: P2
-          D: VCC
-        params:
-          reverse: true
-          symmetric: true
+      keycap_outlines:
+        what: rectangle
+        where: true
+        size: [U -0.8, U -0.8]
+      
+#pcbs:
+#  scaarix_flow:
+#    outlines:
+#      main:
+#        outeline: preview
+#    footprints:
+#      promicro:
+#        type: promicro
+#      trrs:
+#        type: trrs
+#        nets:
+#          A: GND
+#          B: GND
+#          C: P2
+#          D: VCC
+#        params:
+#          reverse: true
+#          symmetric: true

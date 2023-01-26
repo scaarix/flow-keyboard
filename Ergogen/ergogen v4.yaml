@@ -2,25 +2,6 @@ units:
    U: 19.05
    2: 38.1
 points:
-  key:
-    footprints:
-      mx_hotswap:
-        type: mx
-        nets:
-          from: =column_net
-          to: =colrow
-        params:
-          keycaps: true
-          reverse: true
-          hotswap: true
-      diode:
-        type: diode
-        anchor:
-          rotate: 0
-          shift: [0, -8.2]
-        nets:
-          from: =colrow
-          to: =row_net
   zones:
     matrix:
       rotate: 
@@ -74,7 +55,7 @@ points:
         tags:
           1u: true
       anchor:
-        shift: [69, -43]
+        shift: [78, -43]
       rows:
         bottom:
           row_net: P4
@@ -92,6 +73,7 @@ points:
             top:
               
               shift: [37,-4]
+            
           
             
         2:
@@ -103,22 +85,29 @@ points:
             top:
               shift: [35.8,-15]
 outlines:
-  exports:
-      keycap_outlines:
-        what: rectangle
-        where: true
-        size: [U -0.8, U -0.8]
-      
+  keycaps:
+    what: rectangle
+    where: true
+    size: [U - 0.5, U - 0.5]
+  raw:
+    what: polygon
+    points:
+      - ref: matrix_tab_num
+      - ref: matrix_far_num
+      - ref: matrix_far_bottom
+      - ref: thumbfan_1_bottom
+      - ref: thumbfan_2_bottom
+
 #pcbs:
 #  scaarix_flow:
 #    outlines:
 #      main:
-#        outeline: preview
+#        outeline: raw
 #    footprints:
 #      promicro:
-#        type: promicro
+#        what: promicro
 #      trrs:
-#        type: trrs
+#        what: trrs
 #        nets:
 #          A: GND
 #          B: GND
@@ -127,3 +116,20 @@ outlines:
 #        params:
 #          reverse: true
 #          symmetric: true
+#      mx_hotswap:
+#        what: mx
+#        nets:
+#          from: {{colnet}}
+#          to: {{colrow}}
+#        params:
+#          keycaps: true
+#          reverse: true
+#          hotswap: true
+#      diode:
+#        type: diode
+#       anchor:
+#          rotate: 0
+#          shift: [0, -8.2]
+#        nets:
+#          from: {{colnet}}
+#          to: {{colrow}}

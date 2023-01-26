@@ -85,51 +85,43 @@ points:
             top:
               shift: [35.8,-15]
 outlines:
-  keycaps:
-    what: rectangle
-    where: true
-    size: [U - 0.5, U - 0.5]
-  raw:
-    what: polygon
-    points:
-      - ref: matrix_tab_num
-      - ref: matrix_far_num
-      - ref: matrix_far_bottom
+  exports:
+    keycaps:
+      what: rectangle
+      where: true
+      size: [U - 0.5, U - 0.5]
+    #raw:
+    #  what: polygon
+    #  points:
+    #  - ref: matrix_tab_num
+    #  - ref: matrix_far_num
+    #  - ref: matrix_far_bottom
+    #  - ref: thumbfan_1_bottom
+    #  - ref: thumbfan_2_bottom
+    squares:
+      what: polygon
+      points: 
       - ref: thumbfan_1_bottom
       - ref: thumbfan_2_bottom
+      - ref: thumbfan_2_top
+      - ref: thumbfan_1_top
+      expand:
 
-#pcbs:
-#  scaarix_flow:
-#    outlines:
-#      main:
-#        outeline: raw
-#    footprints:
-#      promicro:
-#        what: promicro
-#      trrs:
-#        what: trrs
-#        nets:
-#          A: GND
-#          B: GND
-#          C: P2
-#          D: VCC
-#        params:
-#          reverse: true
-#          symmetric: true
-#      mx_hotswap:
-#        what: mx
-#        nets:
-#          from: {{colnet}}
-#          to: {{colrow}}
-#        params:
-#          keycaps: true
-#          reverse: true
-#          hotswap: true
-#      diode:
-#        type: diode
-#       anchor:
-#          rotate: 0
-#          shift: [0, -8.2]
-#        nets:
-#          from: {{colnet}}
-#          to: {{colrow}}
+pcbs:
+  scaarix_flow:
+    outlines:
+      main:
+        outeline: exports
+    footprints:
+      promicro:
+        what: promicro
+      trrs:
+        what: trrs
+        nets:
+          A: GND
+          B: GND
+          C: P2
+          D: VCC
+        params:
+          reverse: true
+          symmetric: true

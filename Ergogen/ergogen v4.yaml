@@ -165,36 +165,38 @@ outlines:
   #  - ref: thumbfan_1_top
 
 
-#pcbs:
-#  scaarix_flow:
-#    outlines:
-#      main:
-#        outline: switches
-#    footprints:
-#      promicro:
-#        what: promicro
-#      trrs:
-#        what: trrs
-#        params:
-#          A: GND
-#          B: GND
-#          C: P2
-#          D: VCC
-#          reverse: true
-#          symmetric: true
-#      mx_hotswap:
-#        what: mx
-#        params:
-#          keycaps: true
-#          reverse: true
-#          hotswap: true
-#          from: "{{colrow}}"
-#          to: "{{column_net}}"
-#     diode:
-#        what: diode
-#        params:
-#          from: "{{colrow}}"
-#          to: "{{row_net}}"
-#        adjust:
-#          shift: [0, -7]
+pcbs:
+  scaarix_flow:
+    outlines:
+      main:
+        outline: switches
+    footprints:
+      promicro:
+        what: promicro
+      trrs:
+        what: trrs
+        params:
+          A: GND
+          B: GND
+          C: P2
+          D: VCC
+          reverse: true
+          symmetric: true
+      mx_hotswap:
+        what: mx
+        params:
+          keycaps: true
+          reverse: true
+          hotswap: true
+          from: "{{colrow}}"
+          to: "{{column_net}}"
+        where: true
+      diode:
+        what: diode
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -7]
+        where: true
 

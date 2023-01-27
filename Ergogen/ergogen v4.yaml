@@ -123,6 +123,11 @@ outlines:
       adjust:
         - ref: matrix_far_bottom
           shift: [-4.5,-18]
+    - what: rectangle
+      size: [23,90]
+      adjust:
+        - ref: matrix_far_num
+          shift: [20,-35.4]
       
   raw:
     - what: polygon

@@ -2,6 +2,23 @@ units:
    U: 19.05
    2: 38.1
 points:
+  key:
+    footprints:
+      mx_hotswap:
+        what: mx
+        params:
+          keycaps: true
+          reverse: true
+          hotswap: true
+          from: "{{colrow}}"
+          to: "{{column_net}}"
+      diode:
+        what: diode
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -7]
   zones:
     matrix:
       rotate: 
@@ -85,43 +102,99 @@ points:
             top:
               shift: [35.8,-15]
 outlines:
-  exports:
-    keycaps:
-      what: rectangle
+  switches:
+    - what: rectangle
       where: true
-      size: [U - 0.5, U - 0.5]
-    #raw:
-    #  what: polygon
-    #  points:
-    #  - ref: matrix_tab_num
-    #  - ref: matrix_far_num
-    #  - ref: matrix_far_bottom
-    #  - ref: thumbfan_1_bottom
-    #  - ref: thumbfan_2_bottom
-    squares:
-      what: polygon
-      points: 
-      - ref: thumbfan_1_bottom
-      - ref: thumbfan_2_bottom
+      size: 19.2
+      bound: false
+      fillet: 1
+    - what: polygon
+      points:
+        - ref: thumbfan_1_bottom
+          shift: [9,-9.5]
+        - ref: thumbfan_2_bottom
+          shift: [9,-9.5]
+        - ref: thumbfan_2_top
+          shift: [9,9.5]
+        - ref: thumbfan_1_top
+          shift: [-9,9]
+    - what: rectangle
+      size: [28,23]
+      adjust:
+        - ref: matrix_far_bottom
+          shift: [-4.5,-18]
+      
+  raw:
+    - what: polygon
+      points:
+      - ref: matrix_tab_bottom
+      - ref: matrix_tab_home
+      - ref: matrix_tab_top
+      - ref: matrix_tab_num
+      - ref: matrix_pinkie_num
+      - ref: matrix_ring_num
+      - ref: matrix_middle_num
+      - ref: matrix_index_num
+      - ref: matrix_far_num
+      - ref: matrix_far_top
+      - ref: matrix_far_home
+      - ref: matrix_far_bottom
       - ref: thumbfan_2_top
+      - ref: thumbfan_2_bottom
+      - ref: thumbfan_1_bottom
       - ref: thumbfan_1_top
-      expand:
+      - ref: matrix_index_bottom
+      - ref: matrix_middle_bottom
+      - ref: matrix_ring_bottom
+      - ref: matrix_pinkie_bottom
+      - ref: matrix_tab_bottom
+  raw_outline:
+    - what: outline
+      name: raw
+      fillet: 4
+      
+      
 
-pcbs:
-  scaarix_flow:
-    outlines:
-      main:
-        outeline: exports
-    footprints:
-      promicro:
-        what: promicro
-      trrs:
-        what: trrs
-        nets:
-          A: GND
-          B: GND
-          C: P2
-          D: VCC
-        params:
-          reverse: true
-          symmetric: true
+    
+  #_squares:
+  #  what: polygon
+  #  points: 
+  #  - ref: thumbfan_1_bottom
+  #  - ref: thumbfan_2_bottom
+  #  - ref: thumbfan_2_top
+  #  - ref: thumbfan_1_top
+
+
+#pcbs:
+#  scaarix_flow:
+#    outlines:
+#      main:
+#        outline: switches
+#    footprints:
+#      promicro:
+#        what: promicro
+#      trrs:
+#        what: trrs
+#        params:
+#          A: GND
+#          B: GND
+#          C: P2
+#          D: VCC
+#          reverse: true
+#          symmetric: true
+#      mx_hotswap:
+#        what: mx
+#        params:
+#          keycaps: true
+#          reverse: true
+#          hotswap: true
+#          from: "{{colrow}}"
+#          to: "{{column_net}}"
+#     diode:
+#        what: diode
+#        params:
+#          from: "{{colrow}}"
+#          to: "{{row_net}}"
+#        adjust:
+#          shift: [0, -7]
+

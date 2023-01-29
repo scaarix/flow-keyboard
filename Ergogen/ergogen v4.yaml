@@ -72,7 +72,7 @@ points:
         tags:
           1u: true
       anchor:
-        shift: [78, -43]
+        shift: [90, -47]
       rows:
         bottom:
           row_net: P4
@@ -118,17 +118,27 @@ outlines:
           shift: [9,9.5]
         - ref: thumbfan_1_top
           shift: [-9,9]
+    #- what: rectangle
+    #  size: [26,74]
+    #  adjust:
+    #    - ref: matrix_far_bottom
+    #      shift: [-4.5,-18]
+    #- what: rectangle
+    #  size: [23,90]
+    #  adjust:
+    #    - ref: matrix_far_num
+    #      shift: [20,-35.4]
     - what: rectangle
-      size: [28,23]
+      size: [103, 60]
       adjust:
-        - ref: matrix_far_bottom
-          shift: [-4.5,-18]
-    - what: rectangle
-      size: [23,90]
-      adjust:
-        - ref: matrix_far_num
-          shift: [20,-35.4]
-      
+      - ref: matrix_ring_bottom
+        shift: [3.9, -37]    
+    - what: circle
+      radius: 80
+      adjust: 
+      - ref: matrix_ring_bottom
+        shift: [-30,-98.]
+      operation: subtract  
   raw:
     - what: polygon
       points:
@@ -204,4 +214,3 @@ pcbs:
         adjust:
           shift: [0, -7]
         where: true
-

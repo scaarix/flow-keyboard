@@ -3,22 +3,6 @@ units:
    2: 38.1
 points:
   key:
-    footprints:
-      mx_hotswap:
-        what: mx
-        params:
-          keycaps: true
-          reverse: true
-          hotswap: true
-          from: "{{colrow}}"
-          to: "{{column_net}}"
-      diode:
-        what: diode
-        params:
-          from: "{{colrow}}"
-          to: "{{row_net}}"
-        adjust:
-          shift: [0, -7]
   zones:
     matrix:
       rotate: 
@@ -199,7 +183,7 @@ pcbs:
         params:
           A: GND
           B: GND
-          C: P2
+          C: P7
           D: VCC
           reverse: true
           symmetric: true
@@ -220,10 +204,12 @@ pcbs:
         adjust:
           shift: [0, -7]
         where: true
-      oled:
-        what: oled
-        adjust:
-        - ref: matrix_far_home
-        params:
-          from: {{name}}
-          to: {{GND}}
+      #oled:
+      #  what: oled
+      #  adjust:
+      #  - ref: matrix_far_home
+      #  params:
+      #    SDA: "P2"
+      #    SCL: "P3"
+      #    VCC: VCC
+      #    GND: GND

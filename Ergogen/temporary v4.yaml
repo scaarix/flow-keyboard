@@ -1,0 +1,229 @@
+units:
+   U: 19.05
+   2: 38.1
+points:
+  key:
+    footprints:
+      mx_hotswap:
+        what: mx
+        params:
+          keycaps: true
+          reverse: true
+          hotswap: true
+          from: "{{colrow}}"
+          to: "{{column_net}}"
+      diode:
+        what: diode
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -7]
+  zones:
+    matrix:
+      rotate: 
+      rows:
+        bottom:
+          row_net: P16
+        home:
+          row_net: P10
+        top:
+          row_net: P6
+        num:
+          row_net: P5
+      columns:
+        tab:
+          key:
+            column_net: P21
+            stagger: 3
+        pinkie:
+          
+          key:
+            column_net: P20
+            stagger: 3
+
+        ring:          
+          key:
+            stagger: 6
+            column_net: P19
+
+        middle:
+          
+          key:
+            stagger: 2
+            column_net: P18
+
+        index:
+          
+          key:
+            stagger: -8
+            column_net: P15
+
+        far:
+          
+          key:
+            stagger: -3
+            column_net: P14
+
+
+      
+    thumbfan:
+      key:
+        tags:
+          1u: true
+      anchor:
+        shift: [90, -47]
+      rows:
+        bottom:
+          row_net: P4
+        top:
+          shift: [0, 0]
+          row_net: P3
+        
+      columns: 
+        1:
+          key:
+            splay: -22
+            column_net: P8 
+            bottom:
+              shift: [14, 15]
+            top:
+              
+              shift: [37,-4]
+            
+          
+            
+        2:
+          key: 
+            column_net: P9
+            splay: 9
+            spread: 20
+            shift: [5,1]
+            top:
+              shift: [35.8,-15]
+outlines:
+  switches:
+    - what: rectangle
+      where: true
+      size: 19.2
+      bound: false
+      fillet: 1
+      expand: 2
+    - what: polygon
+      points:
+        - ref: thumbfan_1_bottom
+          shift: [9,-9.5]
+        - ref: thumbfan_2_bottom
+          shift: [9,-9.5]
+        - ref: thumbfan_2_top
+          shift: [9,9.5]
+        - ref: thumbfan_1_top
+          shift: [-9,9]
+    #- what: rectangle
+    #  size: [26,74]
+    #  adjust:
+    #    - ref: matrix_far_bottom
+    #      shift: [-4.5,-18]
+    #- what: rectangle
+    #  size: [23,90]
+    #  adjust:
+    #    - ref: matrix_far_num
+    #      shift: [20,-35.4]
+    - what: rectangle
+      size: [103, 60]
+      adjust:
+      - ref: matrix_ring_bottom
+        shift: [3.9, -37]    
+    - what: circle
+      radius: 80
+      adjust: 
+      - ref: matrix_ring_bottom
+        shift: [-34,-100.]
+      operation: subtract  
+    - what: rectangle
+      size: [40,4]
+      adjust:
+        - ref: matrix_tab_bottom
+          shift: [10.4,-10]
+  raw:
+    - what: polygon
+      points:
+      - ref: matrix_tab_bottom
+      - ref: matrix_tab_home
+      - ref: matrix_tab_top
+      - ref: matrix_tab_num
+      - ref: matrix_pinkie_num
+      - ref: matrix_ring_num
+      - ref: matrix_middle_num
+      - ref: matrix_index_num
+      - ref: matrix_far_num
+      - ref: matrix_far_top
+      - ref: matrix_far_home
+      - ref: matrix_far_bottom
+      - ref: thumbfan_2_top
+      - ref: thumbfan_2_bottom
+      - ref: thumbfan_1_bottom
+      - ref: thumbfan_1_top
+      - ref: matrix_index_bottom
+      - ref: matrix_middle_bottom
+      - ref: matrix_ring_bottom
+      - ref: matrix_pinkie_bottom
+      - ref: matrix_tab_bottom
+  raw_outline:
+    - what: outline
+      name: raw
+      fillet: 4
+      
+      
+
+    
+  #_squares:
+  #  what: polygon
+  #  points: 
+  #  - ref: thumbfan_1_bottom
+  #  - ref: thumbfan_2_bottom
+  #  - ref: thumbfan_2_top
+  #  - ref: thumbfan_1_top
+
+
+pcbs:
+  scaarix_flow:
+    outlines:
+      main:
+        outline: switches
+    footprints:
+      promicro:
+        what: promicro
+      trrs:
+        what: trrs
+        params:
+          A: GND
+          B: GND
+          C: P2
+          D: VCC
+          reverse: true
+          symmetric: true
+      mx_hotswap:
+        what: mx
+        params:
+          keycaps: true
+          reverse: true
+          hotswap: true
+          from: "{{colrow}}"
+          to: "{{column_net}}"
+        where: true
+      diode:
+        what: diode
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -7]
+        where: true
+      oled:
+        what: oled
+        adjust:
+        - ref: matrix_far_home
+        params:
+          from: {{name}}
+          to: {{GND}}

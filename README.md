@@ -12,8 +12,8 @@ If you are going to print the pcb (tented) you must buy each part of the keyboar
 - Stabilizers (v1)
 - Thumb Cluster with 3 keys (on each hand) V1
 - Thumb cluster with 4 keys (V2)
-- Oled
-- Tenting
+- Oled (V2)
+- Tenting (V2)
 
 # Updates
 - PCB is finally finished 

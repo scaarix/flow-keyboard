@@ -1,6 +1,8 @@
 # Flow
 An open source split mechanical keyboard powered by [Ergogen](https://github.com/ergogen/ergogen) and kicad
-
+## WARNING:
+The pcb has not been tested as of 2022/01/31. 
+If you are going to print the pcb (tented) you must buy each part of the keyboard separitely being the main body, thumb cluster and bridge
 
 ![Main layout](flow.png)
 
@@ -11,6 +13,8 @@ An open source split mechanical keyboard powered by [Ergogen](https://github.com
 - Thumb Cluster with 3 keys (on each hand) V1
 - Thumb cluster with 4 keys (V2)
 - Oled
+- Tenting
+
 # Updates
 - PCB is finally finished 
 - RGB is starting to get worked on
@@ -18,13 +22,13 @@ An open source split mechanical keyboard powered by [Ergogen](https://github.com
 ## TODO
 - [x] Finish layout (ergogen)
 - [x] Make keyboard outline (ergogen) 
-- [ ] Finish v4 migration (ergogen)
-- [ ] Fix oled pins
-- [ ] Create pcb (ergogen)
-- [ ] Wire everything
+- [x] Finish v4 migration (ergogen)
+- [x] Fix oled pins
+- [x] Create pcb (ergogen)
+- [x] Wire everything
 - [ ] Make screw holes in pcb
 - [ ] Create case  
-- [ ] Add RGB
+- [x] Add RGB
 - [ ] Wireless
 
 # Goals

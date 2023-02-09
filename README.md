@@ -30,9 +30,9 @@ If you are going to print the pcb (tented) you must buy each part of the keyboar
 - [ ] Create case  
 - [x] Add RGB
 - [ ] Wireless
+- [ ] QMK Firmware
+- [ ] Print and build keyboard :)
 
 # Goals
 - Have hotswap with choc, kailh box etc.
 - Be wireless
-- RGB (More of an end goal)
-- Add oled

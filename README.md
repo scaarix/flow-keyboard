@@ -26,7 +26,6 @@ If you are going to print the pcb (tented) you must buy each part of the keyboar
 - [x] Fix oled pins
 - [x] Create pcb (ergogen)
 - [x] Wire everything
-- [ ] Make screw holes in pcb
 - [ ] Create case  
 - [x] Add RGB
 - [ ] Wireless

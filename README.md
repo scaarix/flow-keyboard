@@ -5,7 +5,7 @@ kinda a ripoff of Cride's Fissure keyboard
 The pcb has not been tested as of 2022/01/31. 
 If you are going to print the pcb (tented) you must buy each part of the keyboard separately being the main body, thumb cluster and bridge
 
-![MAIN](pics/flow_v2.jpg)
+<img src="pics/flow_v2.jpg"  width="716" height="460">
 
 # Features (So far)
 - Hotswappable with mx-style switches

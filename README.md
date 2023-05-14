@@ -1,9 +1,7 @@
 # Flow
 An open source split mechanical keyboard powered by [Ergogen](https://github.com/ergogen/ergogen) and kicad
 ## WARNING:
-The pcb has not been tested as of 2022/01/31. 
-If you are going to print the pcb (tented) you must buy each part of the keyboard separately being the main body, thumb cluster and bridge
-
+The keyboard below is going to be scrapped as it is something I am no longer intrerested in. (Read updates for more info)
 <img src="pics/flow_v2.jpg"  width="611" height="393">
 
 # Features (So far)

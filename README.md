@@ -7,7 +7,7 @@ The keyboard below is going to be scrapped as it is something I am no longer int
 # Features (So far)
 - Hotswappable with mx-style switches
 - Flippable PCB
-- Thumb cluster with 4 keys
+- 4 Key Thumb Cluster
 - Oled (V2)
 
 # Updates
@@ -19,7 +19,7 @@ The keyboard below is going to be scrapped as it is something I am no longer int
 - [x] Create pcb (ergogen)
 - [ ] Wire everything
 - [ ] Create case  
-- [ ] Wireless
+- [X] Wireless
 - [ ] QMK Firmware
 - [ ] Print and build keyboard :)
 

@@ -220,15 +220,16 @@ pcbs:
         what: jstph
         params:
           neg: GND
-          pos: RAW
+          pos: BAT+
         adjust:
         - ref: matrix_far_num
           shift: [23,0.5]   
       switch:
         what: slider
         params:
-          from: GND
-          to: RAW
+          from: RAW
+          to: BAT+
+
         adjust:
         - ref: matrix_far_num
           shift: [23,5.3]

@@ -233,7 +233,14 @@ pcbs:
         adjust:
         - ref: matrix_far_num
           shift: [23,5.3]
-
+      rotary:
+        what: rotary
+        params:
+          from: {{colrow}}
+          to: P16
+          A: P10
+          B: GND
+          C: P0
       #trrs:
       #  what: trrs
       #  params:

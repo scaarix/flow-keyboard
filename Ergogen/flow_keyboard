@@ -236,7 +236,7 @@ pcbs:
       rotary:
         what: rotary
         params:
-          from: {{colrow}}
+          from: "{{colrow}}"
           to: P16
           A: P10
           B: GND

@@ -241,6 +241,9 @@ pcbs:
           A: P10
           B: GND
           C: P0
+        adjust:
+        - ref: matrix_far_home
+          shift: [23,0]
       #trrs:
       #  what: trrs
       #  params:

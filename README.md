@@ -4,23 +4,23 @@ An open source split mechanical keyboard powered by [Ergogen](https://github.com
 The keyboard below is going to be scrapped as it is something I am no longer intrerested in. (Read updates for more info)
 <img src="pics/flow_v2.jpg"  width="611" height="393">
 
-# Features (So far)
-- Hotswappable with mx-style switches
-- Flippable PCB
-- 4 Key Thumb Cluster
-- Oled (V2)
-
 # Updates
 - Rebuilding Ergogen Config
 - F*** RGB I'm going wireless and OLED
+
+# Features
+- Hotswappable with mx-style switches
+- Flippable PCB
+- 4 Key Thumb Cluster
+- Oled
 ## TODO
 - [x] Finish layout (ergogen)
 - [x] Make keyboard outline (ergogen) 
-- [x] Create pcb (ergogen)
-- [ ] Wire everything
+- [ ] Create pcb (ergogen)
+- [ ] Route everything
 - [ ] Create case  
 - [X] Wireless
-- [ ] QMK Firmware
+- [ ] ZMK Firmware
 - [ ] Print and build keyboard :)
 
 # Goals

@@ -135,18 +135,22 @@ outlines:
         - ref: matrix_far_num
           shift: [20,-40]
     - what: rectangle
-      size: [100, 60]
+      size: [100, 70]
       adjust:
       - ref: matrix_ring_bottom
-        shift: [3.9, -37]    
+        shift: [20, -37]    
     
     - what: circle
       radius: 84
       adjust: 
       - ref: matrix_ring_bottom
-        shift: [-24,-104.]
+        shift: [-25,-101.37]
       operation: subtract  
-    
+    - what: rectangle
+      size: [10, 15]
+      adjust:
+      - ref: matrix_tab_bottom
+        shift: [5, -11]    
     - what: rectangle
       size: [19,17]
       adjust:

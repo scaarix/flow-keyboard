@@ -5,8 +5,7 @@ The keyboard below is going to be scrapped as it is something I am no longer int
 <img src="pics/flow_v2.jpg"  width="611" height="393">
 
 # Updates
-- Rebuilding Ergogen Config
-- F*** RGB I'm going wireless and OLED
+- Going to start working on routing the pcb
 
 # Features
 - Hotswappable with mx-style switches
@@ -17,12 +16,12 @@ The keyboard below is going to be scrapped as it is something I am no longer int
 ## TODO
 - [x] Finish layout (ergogen)
 - [x] Make keyboard outline (ergogen) 
-- [ ] Create pcb (ergogen)
+- [x] Create pcb (ergogen)
 - [ ] Route everything
 - [ ] Create case  
 - [X] Wireless
 - [ ] ZMK Firmware
-- [ ] Print and build keyboard :)
+- [ ] Buy and build keyboard :)
 
 # Goals
 - Have hotswap with choc, kailh box etc.

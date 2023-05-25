@@ -162,18 +162,18 @@ outlines:
         - ref: matrix_tab_bottom
           shift: [10.4,-10]
     - what: rectangle
+      size: [30,30]
+      adjust:
+        - ref: thumbfan_1_bottom 
+          shift: [10,-10]
+          rotate: 70
+      operation: subtract  
+    - what: rectangle
       where: /thumbfan/
       size: 19.2
       bound: false
       fillet: 3
       expand: 2
-    #- what: rectangle # TRRS holder
-    #  size: [11,13.5]
-    #  adjust:
-    #  - ref: matrix_far_num
-    #    shift: [16,1.5]
-    #  fillet: 3
-
 #╔═╦═╦══╗
 #║╬║╔╣╔╗║
 #║╔╣╚╣╔╗║
@@ -336,15 +336,3 @@ pcbs:
         - ref: matrix_far_home
           shift: [26.78,14]
           rotate: 90
-      #trrs:
-      #  what: trrs
-      #  params:
-      #    A: GND
-      #    B: GND
-      #    C: P0
-      #    D: VCC
-      #    reverse: true
-      #    symmetric: true
-      #  adjust:
-      #  - ref: matrix_far_num
-      #    shift: [19.7,8.4]

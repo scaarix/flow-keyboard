@@ -299,7 +299,7 @@ pcbs:
       b_jumper:
         what: jumper
         params:
-          from: oled4
+          from: oled1
           to: GND
           side: B
         adjust:
@@ -309,7 +309,7 @@ pcbs:
       b_jumper1:
         what: jumper
         params:
-          from: oled3
+          from: oled2
           to: VCC
           side: B
         adjust:
@@ -319,7 +319,7 @@ pcbs:
       b_jumper2:
         what: jumper
         params:
-          from: oled2
+          from: oled3
           to: P3
           side: B
         adjust:
@@ -329,7 +329,7 @@ pcbs:
       b_jumper3:
         what: jumper
         params:
-          from: oled1
+          from: oled4
           to: P2
           side: B
         adjust:

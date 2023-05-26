@@ -213,7 +213,7 @@ pcbs:
         what: oled
         adjust:
         - ref: matrix_far_top
-          shift: [17,-9]
+          shift: [17,-10]
           rotate: 90
         params:
           SDA: oled1 #P2
@@ -267,7 +267,7 @@ pcbs:
           to: P2
         adjust:
         - ref: matrix_far_home
-          shift: [19.2,14]
+          shift: [19.2,13]
           rotate: 90
       f_jumper1:
         what: jumper
@@ -276,7 +276,7 @@ pcbs:
           to: P3
         adjust:
         - ref: matrix_far_home
-          shift: [21.73,14]
+          shift: [21.73,13]
           rotate: 90
       f_jumper2:
         what: jumper
@@ -285,7 +285,7 @@ pcbs:
           to: VCC
         adjust:
         - ref: matrix_far_home
-          shift: [24.28,14]
+          shift: [24.28,13]
           rotate: 90
       f_jumper3:
         what: jumper
@@ -294,7 +294,7 @@ pcbs:
           to: GND
         adjust:
         - ref: matrix_far_home
-          shift: [26.78,14]
+          shift: [26.78,13]
           rotate: 90
       b_jumper:
         what: jumper
@@ -304,7 +304,7 @@ pcbs:
           side: B
         adjust:
         - ref: matrix_far_home
-          shift: [19.2,14]
+          shift: [19.2,13]
           rotate: 90
       b_jumper1:
         what: jumper
@@ -314,7 +314,7 @@ pcbs:
           side: B
         adjust:
         - ref: matrix_far_home
-          shift: [21.73,14]
+          shift: [21.73,13]
           rotate: 90
       b_jumper2:
         what: jumper
@@ -324,7 +324,7 @@ pcbs:
           side: B
         adjust:
         - ref: matrix_far_home
-          shift: [24.28,14]
+          shift: [24.28,13]
           rotate: 90
       b_jumper3:
         what: jumper
@@ -334,7 +334,7 @@ pcbs:
           side: B
         adjust:
         - ref: matrix_far_home
-          shift: [26.78,14]
+          shift: [26.78,13]
           rotate: 90
       #trrs:
       #  what: trrs

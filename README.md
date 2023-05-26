@@ -2,7 +2,7 @@
 An open source split mechanical keyboard powered by [Ergogen](https://github.com/ergogen/ergogen) and kicad
 ## WARNING:
 The keyboard below is going to be scrapped as it is something I am no longer intrerested in. (Read updates for more info)
-<img src="pics/flow_v2.jpg"  width="611" height="393">
+<img src="pics/flow.png">
 
 # Updates
 - Finished routing the pcb

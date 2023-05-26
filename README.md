@@ -15,6 +15,7 @@ The keyboard below is going to be scrapped as it is something I am no longer int
 - 4 Key Thumb Cluster
 - Oled
 - Rotary encoder
+- Wireless
 ## TODO
 - [x] Finish layout (ergogen)
 - [x] Make keyboard outline (ergogen) 

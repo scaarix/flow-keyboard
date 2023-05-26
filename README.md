@@ -5,7 +5,9 @@ The keyboard below is going to be scrapped as it is something I am no longer int
 <img src="pics/flow_v2.jpg"  width="611" height="393">
 
 # Updates
-- Going to start working on routing the pcb
+- Finished routing the pcb
+- Finished making plate
+- Going to start working on the case
 
 # Features
 - Hotswappable with mx-style switches
@@ -17,7 +19,7 @@ The keyboard below is going to be scrapped as it is something I am no longer int
 - [x] Finish layout (ergogen)
 - [x] Make keyboard outline (ergogen) 
 - [x] Create pcb (ergogen)
-- [ ] Route everything
+- [x] Route everything
 - [ ] Create case  
 - [X] Wireless
 - [ ] ZMK Firmware

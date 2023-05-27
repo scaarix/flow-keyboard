@@ -257,7 +257,7 @@ pcbs:
           C: P0
         adjust:
         - ref: matrix_far_home
-          shift: [23,0]
+          shift: [23,-2]
       
       #Jumpers for OLED (f = front, b = back)
       f_jumper:

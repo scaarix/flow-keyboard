@@ -18,7 +18,7 @@ points:
       columns:
         single:
           key:
-            column_net: P5
+            column_net: P20
             shift: [0,11]
           rows.num.skip: true
           rows.top.skip: true
@@ -27,7 +27,7 @@ points:
           
         tab:
           key:
-            column_net: P5
+            column_net: P20
             stagger: 3
           rows.num.skip: true
           rows.top.skip: true
@@ -35,31 +35,31 @@ points:
         pinkie:
           
           key:
-            column_net: P6
+            column_net: P20
             stagger: -7
 
         ring:          
           key:
             stagger: 6
-            column_net: P8
+            column_net: P19
 
         middle:
           
           key:
             stagger: 2
-            column_net: P9
+            column_net: P18
 
         index:
           
           key:
             stagger: -8
-            column_net: P21
+            column_net: P15
 
         far:
           
           key:
             stagger: -3
-            column_net: P20
+            column_net: P14
 
 
       
@@ -71,17 +71,17 @@ points:
         shift: [110, -50  ]
       rows:
         bottom:
-          row_net: P19
+          row_net: P16
         top:
           shift: [0, 0]
-          row_net: P18
+          row_net: P10
         
       columns: 
         1:
           key:
             
             splay: -22
-            column_net: P21
+            column_net: P9
             bottom:
               shift: [14, 15]
             top:
@@ -92,7 +92,7 @@ points:
             
         2:
           key: 
-            column_net: P20
+            column_net: P10
             splay: -9
             spread: 20
             shift: [1,-1]
@@ -252,7 +252,7 @@ pcbs:
         params:
           from: "{{colrow}}"
           to: "{{column_net}}"
-          A: P10
+          A: P1
           B: P0
           C: GND
         adjust:

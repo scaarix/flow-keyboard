@@ -253,8 +253,8 @@ pcbs:
           from: "{{colrow}}"
           to: P16
           A: P10
-          B: GND
-          C: P0
+          B: P0
+          C: GND
         adjust:
         - ref: matrix_far_home
           shift: [23,-2]

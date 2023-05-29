@@ -251,7 +251,7 @@ pcbs:
         what: rotary
         params:
           from: "{{colrow}}"
-          to: P16
+          to: "{{column_net}}"
           A: P10
           B: P0
           C: GND
@@ -336,15 +336,3 @@ pcbs:
         - ref: matrix_far_home
           shift: [26.78,13]
           rotate: 90
-      #trrs:
-      #  what: trrs
-      #  params:
-      #    A: GND
-      #    B: GND
-      #    C: P0
-      #    D: VCC
-      #    reverse: true
-      #    symmetric: true
-      #  adjust:
-      #  - ref: matrix_far_num
-      #    shift: [19.7,8.4]

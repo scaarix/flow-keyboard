@@ -8,13 +8,13 @@ points:
       rotate: 
       rows:
         bottom:
-          row_net: P15
+          row_net: P8
         home:
           row_net: P7
         top:
           row_net: P4 
         num:
-          row_net: P14
+          row_net: P21
       columns:
         single:
           key:
@@ -74,7 +74,7 @@ points:
           row_net: P16
         top:
           shift: [0, 0]
-          row_net: P10
+          row_net: P6
         
       columns: 
         1:

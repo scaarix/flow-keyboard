@@ -144,7 +144,7 @@ outlines:
       radius: 84
       adjust: 
       - ref: matrix_ring_bottom
-        shift: [-25,-101.37]
+        shift: [-26,-101.39]
       operation: subtract  
     - what: rectangle
       size: [10, 15]
@@ -167,7 +167,13 @@ outlines:
         - ref: thumbfan_1_bottom 
           shift: [10,-10]
           rotate: 70
-      operation: subtract  
+      operation: subtract 
+    - what: rectangle
+      size: [37,12]
+      adjust:
+        - ref: thumbfan_1_bottom
+          shift: [9,-6]
+          rotate: 0
     - what: rectangle
       where: /thumbfan/
       size: 19.2

@@ -167,13 +167,7 @@ outlines:
         - ref: thumbfan_1_bottom 
           shift: [10,-10]
           rotate: 70
-      operation: subtract 
-    - what: rectangle
-      size: [37,12]
-      adjust:
-        - ref: thumbfan_1_bottom
-          shift: [9,-6]
-          rotate: 0
+      operation: subtract  
     - what: rectangle
       where: /thumbfan/
       size: 19.2

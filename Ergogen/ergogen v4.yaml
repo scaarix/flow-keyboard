@@ -3,44 +3,40 @@ units:
    2: 38.1
 points:
   key:
-    footprints:
-      mx_hotswap:
-        what: mx
-        params:
-          keycaps: true
-          reverse: true
-          hotswap: true
-          from: "{{colrow}}"
-          to: "{{column_net}}"
-      diode:
-        what: diode
-        params:
-          from: "{{colrow}}"
-          to: "{{row_net}}"
-        adjust:
-          shift: [0, -7]
   zones:
     matrix:
       rotate: 
       rows:
         bottom:
-          row_net: P16
+          row_net: P8
         home:
-          row_net: P10
+          row_net: P7
         top:
-          row_net: P6
+          row_net: P4 
         num:
-          row_net: P5
+          row_net: P21
       columns:
+        single:
+          key:
+            column_net: P20
+            shift: [0,11]
+          rows.num.skip: true
+          rows.top.skip: true
+          rows.home.skip: true
+            
+          
         tab:
           key:
-            column_net: P21
+            column_net: P20
             stagger: 3
+          rows.num.skip: true
+          rows.top.skip: true
+
         pinkie:
           
           key:
             column_net: P20
-            stagger: 3
+            stagger: -7
 
         ring:          
           key:
@@ -72,19 +68,20 @@ points:
         tags:
           1u: true
       anchor:
-        shift: [90, -47]
+        shift: [110, -50  ]
       rows:
         bottom:
-          row_net: P4
+          row_net: P16
         top:
           shift: [0, 0]
-          row_net: P3
+          row_net: P6
         
       columns: 
         1:
           key:
+            
             splay: -22
-            column_net: P8 
+            column_net: P9
             bottom:
               shift: [14, 15]
             top:
@@ -95,19 +92,28 @@ points:
             
         2:
           key: 
-            column_net: P9
-            splay: 9
+            column_net: P10
+            splay: -9
             spread: 20
-            shift: [5,1]
+            shift: [1,-1]
             top:
               shift: [35.8,-15]
+
+
+
+#╭━┳┳┳━━┳╮╭━━┳━┳┳━┳━━╮
+#┃┃┃┃┣╮╭┫┃╰┃┃┫┃┃┃┳┫━━┫
+#┃┃┃┃┃┃┃┃╰┳┃┃┫┃┃┃┻╋━━┃
+#╰━┻━╯╰╯╰━┻━━┻┻━┻━┻━━╯
+
 outlines:
   switches:
     - what: rectangle
-      where: true
+      where: /matrix/
       size: 19.2
       bound: false
       fillet: 1
+      expand: 2
     - what: polygon
       points:
         - ref: thumbfan_1_bottom
@@ -118,67 +124,60 @@ outlines:
           shift: [9,9.5]
         - ref: thumbfan_1_top
           shift: [-9,9]
-    #- what: rectangle
-    #  size: [26,74]
-    #  adjust:
-    #    - ref: matrix_far_bottom
-    #      shift: [-4.5,-18]
-    #- what: rectangle
-    #  size: [23,90]
-    #  adjust:
-    #    - ref: matrix_far_num
-    #      shift: [20,-35.4]
     - what: rectangle
-      size: [103, 60]
+      size: [26,74]
+      adjust:
+        - ref: matrix_far_bottom
+          shift: [-4.5,-18]
+    - what: rectangle
+      size: [26,90]
+      adjust:
+        - ref: matrix_far_num
+          shift: [22.5,-40]
+    - what: rectangle
+      size: [100, 70]
       adjust:
       - ref: matrix_ring_bottom
-        shift: [3.9, -37]    
+        shift: [20, -37]    
+    
     - what: circle
-      radius: 80
+      radius: 84
       adjust: 
       - ref: matrix_ring_bottom
-        shift: [-30,-98.]
+        shift: [-26,-101.39]
       operation: subtract  
-  raw:
-    - what: polygon
-      points:
+    - what: rectangle
+      size: [10, 15]
+      adjust:
       - ref: matrix_tab_bottom
-      - ref: matrix_tab_home
-      - ref: matrix_tab_top
-      - ref: matrix_tab_num
-      - ref: matrix_pinkie_num
-      - ref: matrix_ring_num
-      - ref: matrix_middle_num
-      - ref: matrix_index_num
-      - ref: matrix_far_num
-      - ref: matrix_far_top
-      - ref: matrix_far_home
-      - ref: matrix_far_bottom
-      - ref: thumbfan_2_top
-      - ref: thumbfan_2_bottom
-      - ref: thumbfan_1_bottom
-      - ref: thumbfan_1_top
-      - ref: matrix_index_bottom
-      - ref: matrix_middle_bottom
-      - ref: matrix_ring_bottom
-      - ref: matrix_pinkie_bottom
+        shift: [5, -11]    
+    - what: rectangle
+      size: [19,17]
+      adjust:
       - ref: matrix_tab_bottom
-  raw_outline:
-    - what: outline
-      name: raw
-      fillet: 4
-      
-      
-
-    
-  #_squares:
-  #  what: polygon
-  #  points: 
-  #  - ref: thumbfan_1_bottom
-  #  - ref: thumbfan_2_bottom
-  #  - ref: thumbfan_2_top
-  #  - ref: thumbfan_1_top
-
+        shift: [-10,-10]
+    - what: rectangle
+      size: [20,4]
+      adjust:
+        - ref: matrix_tab_bottom
+          shift: [10.4,-10]
+    - what: rectangle
+      size: [30,30]
+      adjust:
+        - ref: thumbfan_1_bottom 
+          shift: [10,-10]
+          rotate: 70
+      operation: subtract  
+    - what: rectangle
+      where: /thumbfan/
+      size: 19.2
+      bound: false
+      fillet: 3
+      expand: 2
+#╔═╦═╦══╗
+#║╬║╔╣╔╗║
+#║╔╣╚╣╔╗║
+#╚╝╚═╩══╝
 
 pcbs:
   scaarix_flow:
@@ -188,15 +187,11 @@ pcbs:
     footprints:
       promicro:
         what: promicro
-      trrs:
-        what: trrs
-        params:
-          A: GND
-          B: GND
-          C: P2
-          D: VCC
-          reverse: true
-          symmetric: true
+        adjust:
+        - ref: matrix_far_top
+          shift: [23,10]
+          rotate: -90
+
       mx_hotswap:
         what: mx
         params:
@@ -212,5 +207,132 @@ pcbs:
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
-          shift: [0, -7]
+          shift: [0, -8.5]
         where: true
+      oled:
+        what: oled
+        adjust:
+        - ref: matrix_far_top
+          shift: [17,-10]
+          rotate: 90
+        params:
+          SDA: oled1 #P2
+          SCL: oled2 #P3
+          VCC: oled3 #VCC
+          GND: oled4   #GND
+      battery:
+        what: jstph
+        params:
+          neg: GND
+          pos: BAT+
+        adjust:
+        - ref: matrix_far_num
+          shift: [23,0.5]   
+      battery_switch:
+        what: slider
+        params:
+          from: RAW
+          to: BAT+
+
+        adjust:
+        - ref: matrix_far_num
+          shift: [23,5.3]
+      battery_switch1:
+        what: slider
+        params:
+          from: BAT+
+          to: RAW
+          side: B
+
+        adjust:
+        - ref: matrix_far_num
+          shift: [23,5.3]
+      rotary:
+        what: rotary
+        params:
+          from: "{{colrow}}"
+          to: "{{column_net}}"
+          A: P1
+          B: P0
+          C: GND
+        adjust:
+        - ref: matrix_far_home
+          shift: [23,-2]
+      
+      #Jumpers for OLED (f = front, b = back)
+      f_jumper:
+        what: jumper
+        params:
+          from: oled1
+          to: P2
+        adjust:
+        - ref: matrix_far_home
+          shift: [19.2,13]
+          rotate: 90
+      f_jumper1:
+        what: jumper
+        params:
+          from: oled2
+          to: P3
+        adjust:
+        - ref: matrix_far_home
+          shift: [21.73,13]
+          rotate: 90
+      f_jumper2:
+        what: jumper
+        params:
+          from: oled3
+          to: VCC
+        adjust:
+        - ref: matrix_far_home
+          shift: [24.28,13]
+          rotate: 90
+      f_jumper3:
+        what: jumper
+        params:
+          from: oled4
+          to: GND
+        adjust:
+        - ref: matrix_far_home
+          shift: [26.78,13]
+          rotate: 90
+      b_jumper:
+        what: jumper
+        params:
+          from: oled1
+          to: GND
+          side: B
+        adjust:
+        - ref: matrix_far_home
+          shift: [19.2,13]
+          rotate: 90
+      b_jumper1:
+        what: jumper
+        params:
+          from: oled2
+          to: VCC
+          side: B
+        adjust:
+        - ref: matrix_far_home
+          shift: [21.73,13]
+          rotate: 90
+      b_jumper2:
+        what: jumper
+        params:
+          from: oled3
+          to: P3
+          side: B
+        adjust:
+        - ref: matrix_far_home
+          shift: [24.28,13]
+          rotate: 90
+      b_jumper3:
+        what: jumper
+        params:
+          from: oled4
+          to: P2
+          side: B
+        adjust:
+        - ref: matrix_far_home
+          shift: [26.78,13]
+          rotate: 90

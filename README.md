@@ -1,7 +1,6 @@
 # Flow
 An open source split mechanical keyboard powered by [Ergogen](https://github.com/ergogen/ergogen) and kicad
-## WARNING:
-The keyboard below is going to be scrapped as it is something I am no longer intrerested in. (Read updates for more info)
+## Design
 <img src="pics/flow.png">
 
 # Updates

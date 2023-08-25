@@ -5,14 +5,14 @@ points:
   key:
   zones:
     matrix:
-      rotate: 
+      rotate:
       rows:
         bottom:
           row_net: P8
         home:
           row_net: P7
         top:
-          row_net: P4 
+          row_net: P4
         num:
           row_net: P21
       columns:
@@ -23,8 +23,8 @@ points:
           rows.num.skip: true
           rows.top.skip: true
           rows.home.skip: true
-            
-          
+
+
         tab:
           key:
             column_net: P20
@@ -33,36 +33,36 @@ points:
           rows.top.skip: true
 
         pinkie:
-          
+
           key:
             column_net: P20
             stagger: -7
 
-        ring:          
+        ring:
           key:
             stagger: 6
             column_net: P19
 
         middle:
-          
+
           key:
             stagger: 2
             column_net: P18
 
         index:
-          
+
           key:
             stagger: -8
             column_net: P15
 
         far:
-          
+
           key:
             stagger: -3
             column_net: P14
 
 
-      
+
     thumbfan:
       key:
         tags:
@@ -75,23 +75,23 @@ points:
         top:
           shift: [0, 0]
           row_net: P6
-        
-      columns: 
+
+      columns:
         1:
           key:
-            
+
             splay: -22
             column_net: P9
             bottom:
               shift: [14, 15]
             top:
-              
+
               shift: [37,-4]
-            
-          
-            
+
+
+
         2:
-          key: 
+          key:
             column_net: P10
             splay: -9
             spread: 20
@@ -138,19 +138,19 @@ outlines:
       size: [100, 70]
       adjust:
       - ref: matrix_ring_bottom
-        shift: [20, -37]    
-    
+        shift: [20, -37]
+
     - what: circle
       radius: 84
-      adjust: 
+      adjust:
       - ref: matrix_ring_bottom
         shift: [-26,-101.39]
-      operation: subtract  
+      operation: subtract
     - what: rectangle
       size: [10, 15]
       adjust:
       - ref: matrix_tab_bottom
-        shift: [5, -11]    
+        shift: [5, -11]
     - what: rectangle
       size: [19,17]
       adjust:
@@ -164,10 +164,10 @@ outlines:
     - what: rectangle
       size: [30,30]
       adjust:
-        - ref: thumbfan_1_bottom 
+        - ref: thumbfan_1_bottom
           shift: [10,-10]
           rotate: 70
-      operation: subtract  
+      operation: subtract
     - what: rectangle
       where: /thumbfan/
       size: 19.2
@@ -227,7 +227,7 @@ pcbs:
           pos: BAT+
         adjust:
         - ref: matrix_far_num
-          shift: [23,0.5]   
+          shift: [23,0.5]
       battery_switch:
         what: slider
         params:
@@ -258,7 +258,7 @@ pcbs:
         adjust:
         - ref: matrix_far_home
           shift: [23,-2]
-      
+
       #Jumpers for OLED (f = front, b = back)
       f_jumper:
         what: jumper
@@ -336,6 +336,36 @@ pcbs:
         - ref: matrix_far_home
           shift: [26.78,13]
           rotate: 90
+      #Mountingholes require mountinghole.js
+      #To use it you need to use the cli and create a folder called footprints and place the footprint inside of that folder
+      mountinghole_pinky:
+        what: mountinghole
+        adjust:
+        - ref: matrix_single_bottom
+          shift: [-11,0]
+      mountinghole_middle:
+        what: mountinghole
+        adjust:
+        - ref: matrix_middle_num
+          shift: [0,9.5]
+      mountinghole_mcu:
+        what: mountinghole
+        adjust:
+        - ref: matrix_far_num
+          shift: [34.5,4]
+      mountinghole_thumb_right:
+        what: mountinghole
+        adjust:
+        - ref: thumbfan_2_bottom
+          shift: [8.5,-8.75]
+      mountinghole_bottom_left:
+        what: mountinghole
+        adjust:
+        - ref: matrix_single_bottom
+          shift: [0,-26]
+
+
+
 cases:
     case_name:
         - what: outline

@@ -336,3 +336,7 @@ pcbs:
         - ref: matrix_far_home
           shift: [26.78,13]
           rotate: 90
+cases:
+    case_name:
+        - what: outline
+          name: switches

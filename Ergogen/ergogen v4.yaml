@@ -107,6 +107,11 @@ points:
 #╰━┻━╯╰╯╰━┻━━┻┻━┻━┻━━╯
 
 outlines:
+  keys:
+    - what: rectangle
+      where: true
+      size: 18.3
+      bound: false
   switches:
     - what: rectangle
       where: /matrix/
@@ -174,6 +179,82 @@ outlines:
       bound: false
       fillet: 3
       expand: 2
+  _plate_shape: 
+    - what: rectangle
+      where: /matrix/
+      size: 19.2
+      bound: false
+      fillet: 1
+      expand: 2
+    - what: polygon
+      points:
+        - ref: thumbfan_1_bottom
+          shift: [9,-9.5]
+        - ref: thumbfan_2_bottom
+          shift: [9,-9.5]
+        - ref: thumbfan_2_top
+          shift: [9,9.5]
+        - ref: thumbfan_1_top
+          shift: [-9,9]
+    - what: rectangle
+      size: [26,74]
+      adjust:
+        - ref: matrix_far_bottom
+          shift: [-4.5,-18]
+    - what: rectangle
+      size: [98.7, 70]
+      adjust:
+      - ref: matrix_ring_bottom
+        shift: [19.25, -37]
+
+    - what: circle
+      radius: 84
+      adjust:
+      - ref: matrix_ring_bottom
+        shift: [-26,-101.39]
+      operation: subtract
+    - what: rectangle
+      size: [10, 15]
+      adjust:
+      - ref: matrix_tab_bottom
+        shift: [5, -11]
+    - what: rectangle
+      size: [19,17]
+      adjust:
+      - ref: matrix_tab_bottom
+        shift: [-10,-10]
+    - what: rectangle
+      size: [20,4]
+      adjust:
+        - ref: matrix_tab_bottom
+          shift: [10.4,-10]
+    - what: rectangle
+      size: [30,30]
+      adjust:
+        - ref: thumbfan_1_bottom
+          shift: [10,-10]
+          rotate: 70
+      operation: subtract
+    - what: rectangle
+      where: /thumbfan/
+      size: 19.2
+      bound: false
+      fillet: 3
+      expand: 1
+    - what: rectangle
+      size: [10,10]
+      adjust:
+      - ref: thumbfan_2_top
+        shift: [-8,-13]
+    - what: rectangle
+      size: [7,5]
+      adjust:
+      - ref: thumbfan_2_top
+        shift: [-13,7.6]
+        rotate: 10
+  plate: [_plate_shape, -keys]
+      
+    
 #╔═╦═╦══╗
 #║╬║╔╣╔╗║
 #║╔╣╚╣╔╗║
@@ -363,8 +444,6 @@ pcbs:
         adjust:
         - ref: matrix_single_bottom
           shift: [0,-26]
-
-
 
 cases:
     case_name:

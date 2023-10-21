@@ -10,18 +10,11 @@ I didn't really like where I was going with this keyboard design and wanted to c
 - Hotswappable with mx-style switches
 - Flippable PCB
 - 4 Key Thumb Cluster
-- Oled
-- Rotary encoder
-- Wireless
+
 ## TODO
 - [x] Finish layout (ergogen)
 - [x] Make keyboard outline (ergogen) 
-- [x] Create pcb (ergogen)
-- [x] Route everything
-- [ ] Create case  
-- [X] Wireless
-- [ ] ZMK Firmware
-- [ ] Buy and build keyboard :)
+- [ ] Create pcb (ergogen)
 
 # Goals
 - Have hotswap with choc, kailh box etc.

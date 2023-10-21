@@ -12,8 +12,8 @@ I didn't really like where I was going with this keyboard design and wanted to c
 - 4 Key Thumb Cluster
 
 ## TODO
-- [x] Finish layout (ergogen)
-- [x] Make keyboard outline (ergogen) 
+- [ ] Finish layout (ergogen)
+- [ ] Make keyboard outline (ergogen) 
 - [ ] Create pcb (ergogen)
 
 # Goals

@@ -4,10 +4,8 @@ An open source split mechanical keyboard powered by [Ergogen](https://github.com
 <img src="pics/flow.png">
 
 # Updates
-- Finished routing the pcb
-- Finished making plate
-- Going to start working on the case
-
+- REBUILDING THE DESIGN FROM THE GROUND UP
+I didn't really like where I was going with this keyboard design and wanted to change the overall look and feel of the keyboard and the features that I want with this board
 # Features
 - Hotswappable with mx-style switches
 - Flippable PCB
